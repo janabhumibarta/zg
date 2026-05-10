@@ -1,0 +1,208 @@
+/* Button Style */
+  .s-btn { 
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    flex-shrink: 0;
+  }
+  .s-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 5;
+  }
+  .btn-card {
+    background: #b71c1c;
+    padding: 0 12px;
+    margin-left: 2px;
+    margin-right: 6px;
+  }
+
+  /* Loader */
+  #pc-loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    z-index: 10000;
+    font-family: &#39;SolaimanLipi&#39;, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 1px solid #444;
+  }
+
+  /* PhotoCard Design Area */
+  #photocard-render-area {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1000px;
+    height: 1100px;
+    background: url(https://cdn.jsdelivr.net/gh/ramimeit/zg/img/pb.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: &#39;Hind Siliguri&#39;, Arial, sans-serif !important;
+  }
+
+  .pc-main-body {
+    flex-grow: 1;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: radial-gradient(#d1d1d1 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .pc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .pc-logo {
+    height: 90px;
+    width: auto;
+    max-width: 350px;
+    object-fit: contain;
+  }
+
+  .pc-date-box {
+    background: #b22222;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: &#39;SolaimanLipi&#39;;
+  }
+
+  .pc-date-box span { transform: translateY(-5px); }
+
+  .pc-image-container {
+    width: 100%;
+    height: 530px;
+    position: relative;
+    border: 5px solid #b22222;
+    border-radius: 15px;
+  }
+
+  .pc-main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .pc-center-logo-box {
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+    background: #ffffff;
+    border: 5px solid #2bb222;
+    border-radius: 50%;
+    padding: 8px;
+    z-index: 10;
+  }
+
+  .pc-content {
+    text-align: center;
+    margin-top: 80px;
+    flex-grow: 1;
+  }
+
+  /* Single Color Title (Black) */
+  .pc-title {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #000000; /* সম&#2509;প&#2498;র&#2509;ণ ট&#2494;ইট&#2503;ল ক&#2494;ল&#2507; */
+    font-family: &#39;SolaimanLipi&#39;, sans-serif;
+    padding: 0 20px;
+  }
+
+  .pc-footer-red {
+    background: #a30000;
+    width: 100%;
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .pc-url-pill {
+    background: #fff;
+    border-radius: 50px;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pc-url-pill span {
+    color: #a30000;
+    font-weight: bold;
+    font-size: 22px;
+    transform: translateY(-5px);
+  }
+
+  .pc-comment-pill {
+    background: #fff;
+    border: 3px solid #4a0000;
+    border-radius: 12px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -38px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 20;
+  }
+
+  .pc-comment-pill span {
+    font-size: 32px;
+    color: #a30000;
+    font-weight: 900;
+    font-family: &#39;SolaimanLipi&#39;;
+  }
+
+  .pc-share-pill {
+    background: #1877F2;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .pc-share-pill span { transform: translateY(-5px); }
